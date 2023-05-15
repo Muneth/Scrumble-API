@@ -13,7 +13,7 @@ import java.io.Serializable;
 /**
  * Entity Repartition
  */
-@Schema(description = "Entity Repartition")
+@Schema(description = "Entity RepartitionLabel")
 @Data
 @Getter
 @Setter

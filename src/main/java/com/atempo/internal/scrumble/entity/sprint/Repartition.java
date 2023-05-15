@@ -21,7 +21,7 @@ import lombok.*;
 /**
  * Entity Repartition
  */
-@Schema(description = "Entity RepartitionLabel")
+@Schema(description = "Entity Repartition")
 @Data
 @Getter
 @Setter
