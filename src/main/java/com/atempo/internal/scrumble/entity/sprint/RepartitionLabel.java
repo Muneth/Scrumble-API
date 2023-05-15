@@ -21,7 +21,7 @@ import java.io.Serializable;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity
-@Table(name = "s_sprint_repartitionLabel")
+@Table(name = "s_sprint_repartition_label")
 public class RepartitionLabel implements Serializable {
 
     private static final long serialVersionUID = 1L;
