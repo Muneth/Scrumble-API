@@ -11,7 +11,7 @@ import javax.validation.constraints.NotNull;
 import java.io.Serializable;
 
 /**
- * Entity Repartition
+ * Entity RepartitionLabel
  */
 @Schema(description = "Entity RepartitionLabel")
 @Data
