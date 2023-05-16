@@ -18,6 +18,7 @@ import javax.persistence.Table;
 import javax.persistence.UniqueConstraint;
 import javax.validation.constraints.NotNull;
 
+import com.atempo.internal.scrumble.entity.sprint.RepartitionLabel;
 import com.atempo.internal.scrumble.entity.sprint.Reste;
 import com.atempo.internal.scrumble.entity.sprint.Repartition;
 import com.atempo.internal.scrumble.entity.sprint.Retrospective;
@@ -65,8 +66,11 @@ public class Sprint implements Serializable {
 	@OneToMany(targetEntity=Reste.class, mappedBy="sprint")
 	private List<Reste> restes;
 
+	@OneToMany(targetEntity= RepartitionLabel.class, mappedBy="sprint")
+	private List<RepartitionLabel> repartitionLabels;
+
 	@OneToOne(mappedBy = "sprint")
-  @PrimaryKeyJoinColumn
+  	@PrimaryKeyJoinColumn
 	private Retrospective retrospective;
 
 	@ManyToOne(fetch = FetchType.LAZY)

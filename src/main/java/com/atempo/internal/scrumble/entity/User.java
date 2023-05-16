@@ -1,10 +1,10 @@
 package com.atempo.internal.scrumble.entity;
 
 import java.io.Serializable;
-
+import java.util.List;
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-
+import com.atempo.internal.scrumble.entity.sprint.Label;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
 import org.springframework.lang.Nullable;
@@ -46,4 +46,7 @@ public class User implements Serializable {
 	@ManyToOne()
 	@JoinColumn(name = "team_id")
 	private Team team;
+
+	@ManyToMany(mappedBy = "users", fetch = FetchType.LAZY)
+	private List<Label> labels;
 }

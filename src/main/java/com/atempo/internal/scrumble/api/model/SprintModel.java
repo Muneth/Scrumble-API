@@ -3,6 +3,7 @@ package com.atempo.internal.scrumble.api.model;
 import java.util.Date;
 import java.util.List;
 
+import com.atempo.internal.scrumble.api.model.sprint.RepartitionLabelModel;
 import lombok.*;
 import org.springframework.hateoas.RepresentationModel;
 import org.springframework.hateoas.server.core.Relation;
@@ -47,4 +48,5 @@ public class SprintModel extends RepresentationModel<SprintModel> {
 	private ProjectModel project;
 	private List<RepartitionModel> repartitions;
 	private List<ResteModel> restes;
+	private List<RepartitionLabelModel> repartitionLabels;
 }
