@@ -27,6 +27,4 @@ public class Label {
 
     @NotNull
     private String name;
-
-
 }
