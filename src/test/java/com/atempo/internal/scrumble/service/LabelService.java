@@ -1,7 +1,6 @@
 package com.atempo.internal.scrumble.service;
 
 import com.atempo.internal.scrumble.entity.sprint.Label;
-
 import java.util.List;
 import java.util.Optional;
 

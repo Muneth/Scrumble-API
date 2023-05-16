@@ -2,11 +2,8 @@ package com.atempo.internal.scrumble.entity;
 
 import java.io.Serializable;
 import java.util.List;
-import java.util.Set;
-
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
-
 import com.atempo.internal.scrumble.entity.sprint.Label;
 import io.swagger.v3.oas.annotations.media.Schema;
 import lombok.*;
