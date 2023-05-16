@@ -78,7 +78,7 @@ public class TeamEndpoint {
 
 	@DeleteMapping("{id}")
 	public ResponseEntity<String> deleteTeam(@PathVariable("id") Long id) {
-		teamService.deleteTeamById(id);
+		teamService.deleteById(id);
 		return new ResponseEntity<>(new JSONObject("{message: Delete successfully}").toString(), HttpStatus.OK);
 	}
 

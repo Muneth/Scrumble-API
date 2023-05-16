@@ -51,6 +51,5 @@ public class RepartitionServiceImpl implements RepartitionService {
 		}
 		mapper.map(repartition, repartitionToUpdate);
 		return repartition;
-
 	}
 }

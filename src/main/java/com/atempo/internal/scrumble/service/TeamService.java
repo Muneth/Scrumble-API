@@ -4,7 +4,6 @@ import java.util.List;
 import java.util.Optional;
 
 import com.atempo.internal.scrumble.entity.Team;
-import com.atempo.internal.scrumble.entity.User;
 
 public interface TeamService {
 
@@ -16,6 +15,6 @@ public interface TeamService {
 
 	Team update(Team team);
 
-	void deleteTeamById(Long id);
+	void deleteById(Long id);
 
 }

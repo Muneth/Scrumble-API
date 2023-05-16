@@ -10,7 +10,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import com.fasterxml.jackson.annotation.JsonRootName;
 
 /**
- * Resource pour un utilisateur
+ * Resource pour un user
  * 
  */
 @Data

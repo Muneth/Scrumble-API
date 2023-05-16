@@ -31,7 +31,9 @@ public class RepartitionLabel implements Serializable {
     private Long id;
 
     @NotNull
-    String label;
+    @ManyToOne
+    @JoinColumn(name = "label_id")
+    private Label label;
 
     @NotNull
     @ManyToOne
